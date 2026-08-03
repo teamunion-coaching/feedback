@@ -457,7 +457,7 @@
     var name = document.getElementById('name').value.trim();
     var date = document.getElementById('date').value.trim();
     var stamp = date.replace(/-/g,'').slice(2); // YYMMDD
-    var fname = '코칭신청_' + (name || '학생') + (stamp ? '_' + stamp : '') + '.docx';
+    var fname = '영역별 학습 피드백_' + (name || '학생') + (stamp ? '_' + stamp : '') + '.docx';
     var blob = new Blob([zip], {type:'application/vnd.openxmlformats-officedocument.wordprocessingml.document'});
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
